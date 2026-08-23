@@ -1,0 +1,36 @@
+.app-shell { max-width: 1180px; margin: 0 auto; padding: 42px 44px 24px; }
+.topbar { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #c9d4d0; padding-bottom: 28px; }
+.brand-mark { display: grid; place-items: center; width: 48px; aspect-ratio: 1; background: #e4572e; color: white; font: 700 17px var(--heading); letter-spacing: 0; }
+.eyebrow { margin: 0 0 7px; color: #56716b; font: 700 11px var(--mono); letter-spacing: 0.8px; text-transform: uppercase; }
+h1, h2 { margin: 0; color: #193b36; font-family: var(--heading); font-weight: 700; letter-spacing: 0; }
+h1 { font-size: clamp(28px, 4vw, 48px); line-height: 1; }
+h2 { font-size: 25px; line-height: 1.15; }
+.api-status { margin-left: auto; align-self: flex-start; color: #33735b; font: 700 12px var(--mono); }
+.api-status span { display: inline-block; width: 8px; height: 8px; margin-right: 7px; background: #62b889; border-radius: 50%; }
+.content-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr); gap: 44px; padding: 54px 0 72px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 24px; }
+.count-badge { padding: 6px 10px; border: 1px solid #c9d4d0; color: #56716b; font: 12px var(--mono); }
+.table-wrap { overflow-x: auto; border-top: 2px solid #193b36; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th { padding: 13px 12px; color: #56716b; font: 700 11px var(--mono); letter-spacing: 0.5px; text-transform: uppercase; }
+td { padding: 18px 12px; border-top: 1px solid #dce4e1; color: #29443f; font-size: 15px; }
+.student-id { color: #e4572e; font: 700 13px var(--mono); }
+.email { color: #56716b; }
+.form-panel { padding: 27px; background: #193b36; color: #e7f1ec; }
+.form-panel h2 { color: #fff; }
+.form-intro { margin: 13px 0 28px; color: #b5cec4; font-size: 14px; }
+label { display: block; margin-bottom: 17px; color: #d1e1da; font: 12px var(--mono); }
+input { display: block; box-sizing: border-box; width: 100%; margin-top: 7px; padding: 12px 13px; border: 1px solid #52736a; border-radius: 0; outline: 0; background: #244b43; color: white; font: 14px var(--sans); }
+input:focus { border-color: #f1b24a; box-shadow: 0 0 0 2px rgba(241,178,74,.2); }
+input::placeholder { color: #91aea3; }
+button { width: 100%; margin-top: 8px; padding: 14px 16px; border: 0; border-radius: 0; background: #f1b24a; color: #193b36; cursor: pointer; font: 700 13px var(--mono); text-align: left; }
+button span { float: right; font-size: 18px; line-height: 12px; }
+button:hover { background: #ffd078; }
+button:disabled { cursor: wait; opacity: .65; }
+.message { margin: 0 0 18px; padding: 10px 12px; font-size: 13px; }
+.error { background: #fbe7e2; color: #a13b28; }
+.success { background: #e2f1e8; color: #28714d; }
+.empty-state { padding: 32px 0; color: #718982; font-size: 14px; }
+footer { display: flex; justify-content: space-between; padding-top: 18px; border-top: 1px solid #c9d4d0; color: #718982; font: 11px var(--mono); letter-spacing: .3px; }
+footer strong { color: #33735b; }
+@media (max-width: 760px) { .app-shell { padding: 25px 20px 20px; } .content-grid { grid-template-columns: 1fr; gap: 38px; padding: 38px 0 48px; } .topbar { align-items: flex-start; } .api-status { display: none; } .form-panel { padding: 23px; } footer { gap: 12px; flex-direction: column; } }
