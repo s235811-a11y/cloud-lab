@@ -16,6 +16,10 @@ th { padding: 13px 12px; color: #56716b; font: 700 11px var(--mono); letter-spac
 td { padding: 18px 12px; border-top: 1px solid #dce4e1; color: #29443f; font-size: 15px; }
 .student-id { color: #e4572e; font: 700 13px var(--mono); }
 .email { color: #56716b; }
+.actions { white-space: nowrap; }
+.actions button { width: auto; margin: 0 5px 0 0; padding: 6px 8px; font-size: 11px; text-align: center; }
+.edit-button { background: #d9e9df; color: #28624c; }
+.delete-button { background: #fbe0d8; color: #a13b28; }
 .form-panel { padding: 27px; background: #193b36; color: #e7f1ec; }
 .form-panel h2 { color: #fff; }
 .form-intro { margin: 13px 0 28px; color: #b5cec4; font-size: 14px; }
@@ -27,6 +31,7 @@ button { width: 100%; margin-top: 8px; padding: 14px 16px; border: 0; border-rad
 button span { float: right; font-size: 18px; line-height: 12px; }
 button:hover { background: #ffd078; }
 button:disabled { cursor: wait; opacity: .65; }
+.cancel-button { margin-top: 8px; background: transparent; color: #b5cec4; border: 1px solid #52736a; }
 .message { margin: 0 0 18px; padding: 10px 12px; font-size: 13px; }
 .error { background: #fbe7e2; color: #a13b28; }
 .success { background: #e2f1e8; color: #28714d; }
