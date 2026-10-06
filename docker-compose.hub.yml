@@ -1,0 +1,18 @@
+services:
+  backend:
+    image: ${DOCKERHUB_USERNAME:-s235811user}/mern-backend:1.0
+    network_mode: host
+    environment:
+      PORT: ${BACKEND_HOST_PORT:-5001}
+      MONGODB_URI: ${MONGODB_URI}
+
+  frontend:
+    image: ${DOCKERHUB_USERNAME:-s235811user}/mern-frontend:2.0
+    ports:
+      - "4173:4173"
+    environment:
+      BACKEND_URL: http://host.docker.internal:${BACKEND_HOST_PORT:-5001}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - backend
